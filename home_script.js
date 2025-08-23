@@ -1,5 +1,6 @@
-const button=document.getEelementById('Press test button');
+const mbutton=document.getEelementById('javascript_test_button');
 
-button.addEventListener('click', function() {
+mbutton.addEventListener('click', function() {
     alert('Button clicked');
+    console.log('Button click detected');
 });
