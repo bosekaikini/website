@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c99494;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 9999px;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
