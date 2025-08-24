@@ -69,7 +69,7 @@ body {
     z-index: 1000;
 }
 
-.pane.active {
+.pane active {
     right: 0;
 }
 

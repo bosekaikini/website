@@ -4,29 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BoseKaikini.gg</title>
+        <link rel="stylesheet" href="page_template.css">
         <link rel="stylesheet" href="home_style.css">
     </head>
     <body>
-        <div class="header" style="background-color: green; font-size:20px; margin: 0; padding: 0;">
+        <div class="header">
             <h1>Header</h1>
-            <button id="home_button" onclick=goToHomePage()>Home</button>
-            <button id="project_button" onclick=goToProjectPage()>Projects</button>
+            <div class="button_container">
+                <button class="button" id="home_button" onclick=goToHomePage()>Home</button>
+                <button class="button" id="project_button" onclick=goToProjectPage()>Projects</button>
+                <button class="button" id="blog_button" onclick=goToBlogPage()>Blog</button>
+                <button class="contact_button" style="float: right;" id="contact_button" onclick=openContactPane()>Contact</button>
+                <div id="contactPane" class="pane">
+                    <h2>This is how you contact me</h2>
+                    <p>Big ups guys</p>
+                </div>
+            </div>
         </div>
+        <img src="C:\Users\Bose\Downloads\WhatsApp Image 2025-08-20 at 5.49.03 PM.jpeg" alt="Bose Kaikini Image" align="right" width="200" height="auto">
         <h1>About</h1>
-        <p>Origin+Residence+Major+Goals</p>
+        <p align="justify" style="margin: 5px; margin-bottom: 2px;">I am a freshman Computer Science and Mathematics major with a strong interest in data science, programming, and a wide variety of different Mathematics fields. I am looking to solve problems that hold theoretical significance but also have a meaningful impact. If any opportunities exist for learning more or working towards these ends, please reach out.</p>
         <h1>Experience</h1>
         <h3>Education</h3>
-        <ul>
+        <ul style="margin: 20px;">
             <li>Dhirubhai Ambani International School (2020-2023)</li>
             <li>SC Governor's School for Science and Mathematics (2023-2025)</li>
             <li>University of South Carolina (2025-)</li>
         </ul>
-        <p>Add resume, add contact, add courseload</p>
 
-    <button id="javascript_test_button">Press test button</button>
-    <div class="footer" style="background-color: green; font-size:20px; margin: 0; padding: 0;">
-        <p>Made by Bose Kaikini</p>
+    <button id="resume_button" class="button" onclick=goToResumePage()>Resume</button>
+    <button id="coursework_button" class="button" onclick=goToCourseworkPage()>Coursework Fall 25-26</button>
+    <div class="footer">
+        <span>Made by Bose Kaikini</span>
+        <a href="https://github.com/bosekaikini/website.git">Website Github Link</a>
     </div>
+    <script src="script_template.js" defer></script>
     <script src="home_script.js" defer></script>
     </body>
 </html>
