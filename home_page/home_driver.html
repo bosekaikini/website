@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BoseKaikini.gg</title>
-        <link rel="stylesheet" href="page_template.css">
-        <link rel="stylesheet" href="home_style.css">
+        <link rel="stylesheet" href="../template_files/page_template.css">
     </head>
     <body>
         <div class="header">
@@ -16,8 +15,11 @@
                 <button class="button" id="blog_button" onclick=goToBlogPage()>Blog</button>
                 <button class="contact_button" style="float: right;" id="contact_button" onclick=openContactPane()>Contact</button>
                 <div id="contactPane" class="pane">
-                    <h2>This is how you contact me</h2>
-                    <p>Big ups guys</p>
+                    <h2>Contact Information</h2>
+                    <button class="close-btn" onclick="closePane()">Close</button>
+                    <p><a href="mailto:bose.kaikini@gmail.com">Email</a></p>
+                    <p><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://github.com/bosekaikini" target="_blank">Github</a></p>
                 </div>
             </div>
         </div>
@@ -38,7 +40,7 @@
         <span>Made by Bose Kaikini</span>
         <a href="https://github.com/bosekaikini/website.git">Website Github Link</a>
     </div>
-    <script src="script_template.js" defer></script>
+    <script src="../template_files/script_template.js" defer></script>
     <script src="home_script.js" defer></script>
     </body>
 </html>
