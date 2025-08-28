@@ -1,6 +1,9 @@
 * {
-    padding: 0;
     font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
+}
+
+.container {
+    padding: 0 2rem;
 }
 
 body {
@@ -8,18 +11,24 @@ body {
     color: #fff;
     font-size: 18px;
     margin: 0;
-    padding: 0;
+    padding-top: 80px;
 }
 
 .header {
     background-color: #000;
     display: flex;
+    position: fixed;
+    height:80px;
     justify-content: space-between;
     width: 100%;
+    top:0;
+    left: 0;
     text-align: center;
     margin: 0;
     padding: 10px;
     box-sizing: border-box;
+    z-index: 1000;
+    align-items: center;
 }
 
 .button {
@@ -30,6 +39,17 @@ body {
     margin: 2px;
     padding: 10px 20px;
     font-size: large;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #5e5c5c;
+    transform: scale(1.1);
+}
+
+.button:active {
+  transform: scale(0.95);     /* shrinks a bit when clicked */
+  background-color: #383737;     /* darker color while pressed */
 }
 
 .footer {
@@ -95,4 +115,56 @@ body {
 
 .fixed-element {
     right:0;
+}
+
+.main_column {
+    float: left;
+    width: 70%;
+    min-height: 100vh;
+}
+
+.secondary_column {
+    float: left;
+    width: 15%;
+    background-color: #a7a19a;
+    min-height: 100vh;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body .secondary_column {
+  background-color: #a5a4a4;
+  background-image:
+    radial-gradient(transparent 0.6em, #fff 0.6em),
+    conic-gradient(at 1em 1em, transparent 270deg, #4203 270deg),
+    conic-gradient(at 1em 1em, transparent 270deg, #4204 270deg),
+    conic-gradient(at 1em 1em, transparent 270deg, #4205 270deg),
+    conic-gradient(at 1em 1em, transparent 270deg, #4206 270deg);
+  background-size: 1em 1em, 4em 4em, 4em 4em, 4em 4em, 4em 4em;
+  animation: bpx 12s infinite, bpy 12s -3.75s infinite;
+}
+@keyframes bpx {
+  0%, 7.5%, 100%   { background-position-x: 0, 0, 1em, 2em, 3em; }
+  12.5%, 20%       { background-position-x: 0, 1em, 0, 3em, 2em; }
+  25%, 32.5%       { background-position-x: 0, -1em, -2em, 5em, 4em; }
+  37.5%, 45%       { background-position-x: 0, 1em, -4em, 7em, 2em; }
+  50%, 57.5%       { background-position-x: 0, -2em, -5em, 8em, 5em; }
+  62.5%, 70%       { background-position-x: 0, -3em, -4em, 7em, 6em; }
+  75%, 82.5%       { background-position-x: 0, -1em, -2em, 5em, 4em; }
+  87.5%, 95%       { background-position-x: 0, -3em, 0, 3em, 6em; }
+}
+
+@keyframes bpy {
+  0%, 7.5%, 100%   { background-position-y: 0, 0, 1em, 2em, 3em; }
+  12.5%, 20%       { background-position-y: 0, 1em, 0, 3em, 2em; }
+  25%, 32.5%       { background-position-y: 0, -1em, -2em, 5em, 4em; }
+  37.5%, 45%       { background-position-y: 0, 1em, -4em, 7em, 2em; }
+  50%, 57.5%       { background-position-y: 0, -2em, -5em, 8em, 5em; }
+  62.5%, 70%       { background-position-y: 0, -3em, -4em, 7em, 6em; }
+  75%, 82.5%       { background-position-y: 0, -1em, -2em, 5em, 4em; }
+  87.5%, 95%       { background-position-y: 0, -3em, 0, 3em, 6em; }
 }
