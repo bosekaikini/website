@@ -1,9 +1,10 @@
 * {
-    font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 .container {
-    padding: 0 2rem;
+    padding: 0 20px;
+    max-width: 3000px;
 }
 
 body {
@@ -48,8 +49,17 @@ body {
 }
 
 .button:active {
-  transform: scale(0.95);     /* shrinks a bit when clicked */
-  background-color: #383737;     /* darker color while pressed */
+  transform: scale(0.95);     
+  background-color: #717070;     
+}
+
+.button_cotainer {
+    position: fixed;
+    top:20px;
+    z-index: 150;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .footer {
@@ -83,9 +93,10 @@ body {
     top:0;
     right: -300px;
     width: 200px;
-    height: 50%;
+    height: 35%;
     background-color: #000;
     color: #fff;
+    padding: 2px;
     transition: right 0.3s ease;
     z-index: 1000;
 }
@@ -102,7 +113,7 @@ body {
     display: block;
 }
 
-.close-btn {
+.pane .close-btn {
     background: none;
     border: none;
     color: #fff;
@@ -111,6 +122,15 @@ body {
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+.overlay {
+  display: none;                /* hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #000;
+  z-index: 1000;
 }
 
 .fixed-element {
@@ -128,25 +148,27 @@ body {
     width: 15%;
     background-color: #a7a19a;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
+    width:100%;
 }
 
 body .secondary_column {
-  background-color: #a5a4a4;
-  background-image:
-    radial-gradient(transparent 0.6em, #fff 0.6em),
+  background-color: #6c6a6a;
+    background-image: 
     conic-gradient(at 1em 1em, transparent 270deg, #4203 270deg),
     conic-gradient(at 1em 1em, transparent 270deg, #4204 270deg),
     conic-gradient(at 1em 1em, transparent 270deg, #4205 270deg),
     conic-gradient(at 1em 1em, transparent 270deg, #4206 270deg);
   background-size: 1em 1em, 4em 4em, 4em 4em, 4em 4em, 4em 4em;
-  animation: bpx 12s infinite, bpy 12s -3.75s infinite;
+  animation: bpx 30s infinite, bpy 12s -3.75s infinite;
 }
+
 @keyframes bpx {
   0%, 7.5%, 100%   { background-position-x: 0, 0, 1em, 2em, 3em; }
   12.5%, 20%       { background-position-x: 0, 1em, 0, 3em, 2em; }
@@ -168,3 +190,4 @@ body .secondary_column {
   75%, 82.5%       { background-position-y: 0, -1em, -2em, 5em, 4em; }
   87.5%, 95%       { background-position-y: 0, -3em, 0, 3em, 6em; }
 }
+

@@ -6,8 +6,8 @@ const homeGoButton=document.getElementById('home_button');
 const blogGoButton=document.getElementById('blog_button');
 const resumeGoButton=document.getElementById('resume_button');
 const courseworkGoButton=document.getElementById('coursework_button');
-const contactButton=document.getElementById('contact_button');
-const contactPane=document.getElementById('contactPane');
+const contactButton=document.getElementById("contact_button");
+const contactPane=document.getElementById("contactPane");
 
 projGoButton.addEventListener('click', function() {
     window.location.href='../project_page/project_driver.html';
@@ -32,3 +32,8 @@ courseworkGoButton.addEventListener('click', function() {
 contactButton.addEventListener('click', function() {
     contactPane.classList.add('active');
 });
+
+function openContactPane() {
+    contactPane.classList.add('active');
+}
+

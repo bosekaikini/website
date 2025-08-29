@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../template_files/page_template.css">
+    <title>BoseKaikini.gg</title>
 </head>
 <body>
     <div class="header">
         <h1>Projects and Publications</h1>
         <div class="button_container">
-            <button class="button" id="home_button" onclick=goToHomePage()>Home</button>                <button class="button" id="project_button" onclick=goToProjectPage()>Projects</button>
+            <button class="button" id="home_button" onclick=goToHomePage()>Home</button>                
+            <button class="button" id="project_button" onclick=goToProjectPage()>Projects</button>
             <button class="button" id="blog_button" onclick=goToBlogPage()>Blog</button>
             <button class="contact_button" style="float: right;" id="contact_button" onclick=openContactPane()>Contact</button>
+            <div id="contactPane" class="pane">
+                    <h2>Contact Information</h2>
+                    <p><a href="mailto:bose.kaikini@gmail.com">Email</a></p>
+                    <p><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://github.com/bosekaikini" target="_blank">Github</a></p>
+                    <button class="close-btn" onclick="closePane()">Close</button>
+            </div>
         </div>
     </div>
 
@@ -21,7 +30,13 @@
   
   <div class="main_column">
     <h2>Ongoing</h2>
-    <p>Some stuff</p>
+    <h4>Image Recognition and Geogebra conversion project</h4>
+    <ul>
+        <li>Detecting the line on paper</li>
+        <li>Aligning it to a 'graph'</li>
+        <li>Minimizing error and estimating the function of the line</li>
+        <li>Input as new line in text entry file and prompt Geogebra</li>
+    </ul>
     <h2>Completed</h2>
 </div>
   
@@ -30,7 +45,7 @@
 </div>
 <div class="footer">
     <span>Bose Kaikini 2025</span>
-    <a href="https://github.com/bosekaikini/website.git">Website Github Link</a>
+    <a href="https://github.com/bosekaikini/website.git" target="_blank">Website Github Link</a>
 </div>
 <script src="../template_files/script_template.js" defer></script>
 <script src="project_script.js" defer></script>

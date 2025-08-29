@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="header">
-            <h1>Title of this page</h1>
+            <h1>Blog</h1>
             <div class="button_container">
                 <button class="button" id="home_button" onclick=goToHomePage()>Home</button>
                 <button class="button" id="project_button" onclick=goToProjectPage()>Projects</button>
@@ -16,27 +16,47 @@
                 <button class="contact_button" style="float: right;" id="contact_button" onclick=openContactPane()>Contact</button>
                 <div id="contactPane" class="pane">
                     <h2>Contact Information</h2>
-                    <button class="close-btn" onclick="closePane()">Close</button>
                     <p><a href="mailto:bose.kaikini@gmail.com">Email</a></p>
                     <p><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
                     <p><a href="https://github.com/bosekaikini" target="_blank">Github</a></p>
+                    <button class="close-btn" onclick="closePane()">Close</button>
                 </div>
             </div>
-            </div>
+        </div>
     <div class="row">
   <div class="secondary_column">
   </div>
   
   <div class="main_column">
-    <h2>New, insightful articles on technology, computer science, and math every week!</h2>
+    <h2 style="text-align: center;">New, insightful articles on technology, computer science, and math every week!</h2>
+    <h3 style="margin-bottom: 50px;">Documenting my learning and development process</h3>
+    <h4>Next article: Bourgain proofs and k-junta equations</h4>
+<nav>
+  <button onclick="showArticle('article1')">First Post</button>
+  <button onclick="showArticle('article2')">Second Post</button>
+  <button onclick="showArticle('article3')">Third Post</button>
+</nav>
+
+<article id="article1" class="article">First blog content...</article>
+<article id="article2" class="article" style="display:none;">Second blog content...</article>
+<article id="article3" class="article" style="display:none;">Third blog content...</article>
+
+<script>
+function showArticle(id) {
+  document.querySelectorAll('.article').forEach(a => a.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+}
+</script>
 </div>
+
   
   <div class="secondary_column">
   </div>
 </div>
+
     <div class="footer">
         <span>Bose Kaikini 2025</span>
-        <a href="https://github.com/bosekaikini/website.git">Website Github Link</a>
+        <a href="https://github.com/bosekaikini/website.git" target="_blank">Website Github Link</a>
     </div>
     <script src="../template_files/script_template.js" defer></script>
     <script src="blog_script.js" defer></script>
