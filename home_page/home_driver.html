@@ -7,39 +7,58 @@
         <link rel="stylesheet" href="../template_files/page_template.css">
     </head>
     <body>
-        <div class="header container">
-            <h1 style="margin-left:10px;">Bose Kaikini</h1>
-            <div class="button_container">
-                <button class="button" id="home_button" onclick=goToHomePage()>Home</button>
-                <button class="button" id="project_button" onclick=goToProjectPage()>Projects</button>
-                <button class="button" id="blog_button" onclick=goToBlogPage()>Blog</button>
-                <button class="contact_button" style="float: right;" id="contact_button" onclick=openContactPane()>Contact</button>
-                <div id="contactPane" class="pane">
-                    <h2>Contact Information</h2>
-                    <p><a href="mailto:bose.kaikini@gmail.com">Email</a></p>
-                    <p><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
-                    <p><a href="https://github.com/bosekaikini" target="_blank">Github</a></p>
-                    <button class="close-btn" onclick="closePane()">Close</button>
-                </div>
-            </div>
-        </div>
+<div class="header">
+  <!-- Left -->
+  <div class="header-left">
+    <h1>Bose Kaikini</h1>
+  </div>
+
+  <!-- Center -->
+  <div class="nav_buttons">
+    <button class="button" id="home_button" onclick="goToHomePage()">Home</button>
+    <button class="button" id="project_button" onclick="goToProjectPage()">Projects</button>
+    <button class="button" id="blog_button" onclick="goToBlogPage()">Blog</button>
+  </div>
+
+  <!-- Right -->
+  <div class="header-right">
+    <button class="contact_button button" id="contact_button" onclick="openContactPane()">Contact</button>
+  </div>
+
+  <!-- Contact Pane -->
+  <div id="contactPane" class="pane">
+    <h2>Contact Information</h2>
+    <p><a href="mailto:bose.kaikini@gmail.com">Email</a></p>
+    <p><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
+    <p><a href="https://github.com/bosekaikini" target="_blank">Github</a></p>
+    <button class="close-btn button" onclick="closePane()">Close</button>
+  </div>
+</div>
+
 
     <div class="row">
   <div class="secondary_column">
   </div>
   
   <div class="main_column">
-    <img src="C:\Users\Bose\Downloads\WhatsApp Image 2025-08-20 at 5.49.03 PM.jpeg" alt="Bose Kaikini Image" align="right" width="200" height="auto" padding: 5px;>
-    <h1>About</h1>
-        <p align="justify" style="margin: 5px; margin-bottom: 2px;">Freshman Mathematics and Computer Science major with a strong interest in machine learning, data science, and a wide variety of Mathematics fields. While learning, my goal is to solve problems that hold theoretical significance but also have a meaningful impact. If you know of any such opportunities or are interested in working together, don't hesitate to reach out.</p>
-        <h1>Experience</h1>
-        <h3>Education</h3>
-        <ul style="margin: 20px;">
+    <img src="C:\Users\Bose\Downloads\WhatsApp Image 2025-08-20 at 5.49.03 PM.jpeg" class="img" alt="Bose Kaikini Image">
+    <h1 style="margin:5px;margin-top:30px;">About</h1>
+        <p align="justify" style="margin: 5px; margin-bottom: 50px;">Freshman Mathematics and Computer Science major with a strong interest in machine learning, data science, and a wide variety of Mathematics fields. While learning, my goal is to solve problems that hold theoretical significance but also have a meaningful impact. If you know of any such opportunities or are interested in working together, don't hesitate to reach out.</p>
+        <h1 style="margin:5px;">Experience</h1>
+        <h3 style="margin:10px;">Education</h3>
+        <ul style="margin: 20px; margin-bottom:50px;margin-top:0px">
             <li>Dhirubhai Ambani International School (2020-2023)</li>
             <li>SC Governor's School for Science and Mathematics (2023-2025)</li>
             <li>University of South Carolina (2025-)</li>
         </ul>
-    <button id="resume_button" class="button" onclick=goToResumePage()>Resume</button>
+        <h1 style="margin-left:5px;margin-bottom:0px;">Current Interests</h1>
+        <h3 style="margin:10px;margin-top:5px;">Independent Pursuits</h3>
+        <ul style="margin: 20px; margin-bottom:50px;margin-top:0px">
+            <li>Differential equations modelling</li>
+            <li>Boolean structures and Functions</li>
+            <li>Image Processing</li>
+        </ul>
+    <button id="resume_button" class="button" onclick=goToResumePage() style="margin-left: 5px;">Resume</button>
     <button id="coursework_button" class="button" onclick=goToCourseworkPage()>Coursework Fall 25-26</button>
 </div>
   

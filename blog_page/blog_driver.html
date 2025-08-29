@@ -7,39 +7,45 @@
         <link rel="stylesheet" href="../template_files/page_template.css">
     </head>
     <body>
-        <div class="header">
-            <h1>Blog</h1>
-            <div class="button_container">
-                <button class="button" id="home_button" onclick=goToHomePage()>Home</button>
-                <button class="button" id="project_button" onclick=goToProjectPage()>Projects</button>
-                <button class="button" id="blog_button" onclick=goToBlogPage()>Blog</button>
-                <button class="contact_button" style="float: right;" id="contact_button" onclick=openContactPane()>Contact</button>
-                <div id="contactPane" class="pane">
-                    <h2>Contact Information</h2>
-                    <p><a href="mailto:bose.kaikini@gmail.com">Email</a></p>
-                    <p><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
-                    <p><a href="https://github.com/bosekaikini" target="_blank">Github</a></p>
-                    <button class="close-btn" onclick="closePane()">Close</button>
-                </div>
-            </div>
-        </div>
+<div class="header">
+  <div class="header-left">
+    <h1>Blog</h1>
+  </div>
+
+  <div class="nav_buttons">
+    <button class="button" id="home_button" onclick="goToHomePage()">Home</button>
+    <button class="button" id="project_button" onclick="goToProjectPage()">Projects</button>
+    <button class="button" id="blog_button" onclick="goToBlogPage()">Blog</button>
+  </div>
+
+  <div class="header-right">
+    <button class="contact_button button" id="contact_button" onclick="openContactPane()">Contact</button>
+  </div>
+</div>
+
+  <div id="contactPane" class="pane">
+    <h2>Contact Information</h2>
+    <p><a href="mailto:bose.kaikini@gmail.com">Email</a></p>
+    <p><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
+    <p><a href="https://github.com/bosekaikini" target="_blank">Github</a></p>
+    <button class="close-btn button" onclick="closePane()">Close</button>
+  </div>
+
     <div class="row">
   <div class="secondary_column">
   </div>
   
   <div class="main_column">
     <h2 style="text-align: center;">New, insightful articles on technology, computer science, and math every week!</h2>
-    <h3 style="margin-bottom: 50px;">Documenting my learning and development process</h3>
-    <h4>Next article: Bourgain proofs and k-junta equations</h4>
+    <hr class="hr"/>
+    <p style="margin-bottom: 50px; margin-left:5px;">Documenting my learning and development process</p>
 <nav>
-  <button onclick="showArticle('article1')">First Post</button>
-  <button onclick="showArticle('article2')">Second Post</button>
-  <button onclick="showArticle('article3')">Third Post</button>
+  <button onclick="showArticle('article1')" class="button" style="margin-left:5px;">Article 1</button>
+  <button onclick="showArticle('article2')" class="button">Article 2</button>
 </nav>
 
-<article id="article1" class="article">First blog content...</article>
-<article id="article2" class="article" style="display:none;">Second blog content...</article>
-<article id="article3" class="article" style="display:none;">Third blog content...</article>
+<article id="article1" class="article" style="margin-top:20px;">Next article: Bourgain proofs and k-junta equations</article>
+<article id="article2" class="article" style="display:none; margin-top:20px;">September 20...</article>
 
 <script>
 function showArticle(id) {
