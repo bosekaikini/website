@@ -10,15 +10,15 @@ const contactButton=document.getElementById("contact_button");
 const contactPane=document.getElementById("contactPane");
 
 projGoButton.addEventListener('click', function() {
-    window.location.href='../project_page/project_driver.html';
+    window.location.href='../project_driver.html';
 });
 
 homeGoButton.addEventListener('click', function() {
-    window.location.href='../home_page/home_driver.html';
+    window.location.href='../index.html';
 });
 
 blogGoButton.addEventListener('click', function() {
-    window.location.href='../blog_page/blog_driver.html';
+    window.location.href='../blog_driver.html';
 });
 
 resumeGoButton.addEventListener('click', function() {
