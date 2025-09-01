@@ -22,7 +22,7 @@ blogGoButton.addEventListener('click', function() {
 });
 
 resumeGoButton.addEventListener('click', function() {
-    window.open('../external_files/Bose_Kaikini_Resume_2025_July.pdf');
+    window.open('../external_files/Bose Kaikini_Resume_2025_July.pdf');
 });
 
 courseworkGoButton.addEventListener('click', function() {
