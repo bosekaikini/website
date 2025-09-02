@@ -24,7 +24,7 @@ blogGoButton.addEventListener('click', () => {
 
 resumeGoButton.addEventListener('click', () => {
     // Rename file to remove space in filename for safety
-    window.open('external_files/Bose Kaikini Resume 2025 July.pdf');
+    window.open('external_files/Bose%20Kaikini_Resume_2025_July.pdf');
 });
 
 courseworkGoButton.addEventListener('click', () => {
